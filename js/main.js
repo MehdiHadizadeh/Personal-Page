@@ -50,11 +50,8 @@ skillsHeader.forEach((el) => {
 
 /*==================== Fill skill bar width ====================*/
 const skillsNumber = document.querySelectorAll('.skills__percentage');
-console.log(skillsNumber);
 skillsNumber.forEach((skill) => {
-  console.log(skill);
   skill.style.width = skill.getAttribute('val');
-  console.log(skill.getAttribute('val'));
 });
 
 /*==================== QUALIFICATION TABS ====================*/
