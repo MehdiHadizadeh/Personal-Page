@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="img/about.jpg" />
+    <link rel="icon" type="image/x-icon" href="assets/img/about.jpg" />
 
     <title>Mehdi Hadizadeh | Web Developer | Personal Page</title>
     <meta name="description" content="Mehdi Hadizadeh Personal Page." />
@@ -22,11 +22,11 @@
     />
     <meta
       property="og:image"
-      content="https://mehdihadizadeh.ir/img/about.jpg"
+      content="https://mehdihadizadeh.ir/assets/img/about.jpg"
     />
     <meta
       property="og:image:secure_url"
-      content="https://mehdihadizadeh.ir/img/about.jpg"
+      content="https://mehdihadizadeh.ir/assets/img/about.jpg"
     />
     <meta property="og:image:width" content="450" />
     <meta property="og:image:height" content="371" />
@@ -37,13 +37,13 @@
     />
     <meta
       name="twitter:image"
-      content="https://mehdihadizadeh.ir/img/about.jpg"
+      content="https://mehdihadizadeh.ir/assets/img/about.jpg"
     />
     <meta charset="UTF-8" />
 
     <link
       rel="icon"
-      href="https://mehdihadizadeh.ir/img/about.jpg"
+      href="https://mehdihadizadeh.ir/assets/img/about.jpg"
       sizes="32x32"
     />
 
@@ -69,7 +69,7 @@
     />
 
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
@@ -187,7 +187,7 @@
                     class="home__blob-img"
                     x="12"
                     y="18"
-                    xlink:href="img/perfil.png"
+                    xlink:href="assets/img/perfil.png"
                   />
                 </g>
               </svg>
@@ -220,7 +220,11 @@
         <spna class="section__subtitle">My introduction</spna>
 
         <div class="about__container container grid">
-          <img src="img/about.jpg" alt="Mehdi Hadizadeh" class="about__img" />
+          <img
+            src="assets/img/about.jpg"
+            alt="Mehdi Hadizadeh"
+            class="about__img"
+          />
 
           <div class="about__data">
             <p class="about__description">
@@ -254,7 +258,7 @@
             <div class="div about__buttons">
               <a
                 download=""
-                href="pdf/Mehdi Hadizadeh - Resume.pdf"
+                href="assets/pdf/Mehdi Hadizadeh - Resume.pdf"
                 target="_blank"
                 class="button button--flex"
               >
@@ -277,7 +281,7 @@
               <i class="uil uil-brackets-curly skills__icon"></i>
               <div>
                 <h1 class="skills__title">Frontend Developer</h1>
-                <spna class="skills__subtitle">more than 4 yeaers</spna>
+                <!-- <spna class="skills__subtitle">more than 4 yeaers</spna> -->
               </div>
               <i class="uil uil-angle-down skills__arrow"></i>
             </div>
@@ -286,60 +290,52 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">HTML</h3>
-                  <span class="skills__number">90%</span>
+                  <!-- <span class="skills__number">90%</span> -->
                 </div>
-                <div class="skills__bar">
+                <!-- <div class="skills__bar">
                   <span class="skills__percentage" val="90%"></span>
-                </div>
+                </div> -->
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">CSS</h3>
-                  <span class="skills__number">70%</span>
                 </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="70%"></span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Bootstrap</h3>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">jQuery</h3>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">JavaScript</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="60%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">TypeScript</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="60%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Angular</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="60%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Progressive Web Apps - PWA</h3>
-                  <span class="skills__number">90%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="90%"></span>
                 </div>
               </div>
             </div>
@@ -351,7 +347,7 @@
               <i class="uil uil-server-network-alt skills__icon"></i>
               <div>
                 <h1 class="skills__title">Backend Developer</h1>
-                <spna class="skills__subtitle">more than 2 yeaers</spna>
+                <!-- <spna class="skills__subtitle">more than 2 yeaers</spna> -->
               </div>
               <i class="uil uil-angle-down skills__arrow"></i>
             </div>
@@ -359,57 +355,33 @@
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">ASP.NET MVC</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="60%"></span>
                 </div>
               </div>
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">ASP.NET Core</h3>
-                  <span class="skills__number">35%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="35%"></span>
                 </div>
               </div>
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Entity Framework</h3>
-                  <span class="skills__number">60%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="60%"></span>
                 </div>
               </div>
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Microsoft SQL Server</h3>
-                  <span class="skills__number">50%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="50%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Object-Oriented Programming</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="80%"></span>
                 </div>
               </div>
 
               <div class="skills__data">
                 <div class="skills__titles">
                   <h3 class="skills__name">Restful API</h3>
-                  <span class="skills__number">80%</span>
-                </div>
-                <div class="skills__bar">
-                  <span class="skills__percentage" val="80%"></span>
                 </div>
               </div>
             </div>
@@ -678,6 +650,6 @@
     <!-- <script src=""></script> -->
 
     <!--==================== MAIN JS ====================-->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
