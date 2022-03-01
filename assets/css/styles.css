@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -24,7 +24,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -355,7 +355,17 @@ img {
 
 .about__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.download-resume-btn {
+  width: -webkit-fill-available;
+  justify-content: space-between;
+}
+
+.download-resume-btn i {
+  margin: 0;
 }
 
 /*==================== SKILLS ====================*/
@@ -449,7 +459,7 @@ img {
   cursor: pointer;
 }
 .qualification__button:hover {
-  color: var(--first-color) '';
+  color: var(--first-color) "";
 }
 .qualification__icon {
   font-size: 1.8rem;
@@ -783,7 +793,7 @@ img {
   }
 
   .about__buttons {
-    justify-content: initial;
+    justify-content: space-between;
   }
 
   .qualification__tabs {
