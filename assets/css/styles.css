@@ -332,6 +332,18 @@ img {
   display: inline-flex;
   align-items: center;
 }
+.button--small {
+  padding: 0.75rem 1rem;
+}
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color-alt);
+}
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
@@ -514,7 +526,93 @@ img {
 .qualification__active[data-content] {
   display: block;
 }
-/*==================== SERVICES ====================*/
+/*==================== gameS ====================*/
+.games__container {
+  justify-items: center;
+}
+
+.games__content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 2.5rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.games__content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.games__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--mb-1);
+}
+.games__icon {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.games__img {
+  width: 232px;
+  height: 232px;
+  border-radius: 0.25rem;
+}
+.games__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.game__button {
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+
+.game__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+/* Active Modal */
+
+/*==================== PORTFOLIO ====================*/
+
+/*==================== PROJECT IN MIND ====================*/
+.project {
+  text-align: center;
+}
+.project__container {
+  background-color: var(--first-color-second);
+  border-radius: 1rem;
+  padding: 2.5rem 0.8rem;
+}
+
+.project__data {
+  padding-top: 0.8rem;
+}
+
+.project__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description {
+  margin-bottom: var(--mb-1-5);
+}
+.project__title,
+.project__description {
+  color: #fff;
+}
+
+.project__img {
+  width: 232px;
+  justify-self: center;
+}
+/*==================== TESTIMONIAL ====================*/
+
+/*==================== CONTACT ME ====================*/
 /* .contact__container {
   row-gap: 3rem;
   grid-template-columns: repeat(3, 2fr);
@@ -539,46 +637,6 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
-/* Active Modal */
-
-/*==================== PORTFOLIO ====================*/
-
-/*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
-.project__container {
-  background-color: var(--first-color-second);
-  border-radius: 1rem;
-  padding: 2.5rem .8rem;
-}
-
-.project__data {
-  padding-top: .8rem;
-}
-
-
-.project__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-}
-
-.project__description  {
-  margin-bottom: var(--mb-1-5);
-}
-.project__title,
-.project__description {
-  color: #fff;
-}
-
-.project__img {
-  width: 232px;
-  justify-self: center;
-
-}
-/*==================== TESTIMONIAL ====================*/
-
-/*==================== CONTACT ME ====================*/
 
 /*==================== FOOTER ====================*/
 .footer {
@@ -742,6 +800,14 @@ img {
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+
+  .games__content {
+    padding: 2.5rem ;
+  }
+  .games__container {
+    /* gap: 3rem; */
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -852,6 +918,10 @@ img {
     grid-template-columns: repeat(3, 1fr);
   } */
 
+  .games__container {
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .footer__bg {
     padding: 3rem 0 3.5rem;
